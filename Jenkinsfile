@@ -10,12 +10,7 @@ pipeline {
         }
         stage('Step2') {
           steps {
-            echo 'I\'m doing something....'
-          }
-        }
-        stage('') {
-          steps {
-            bat(returnStatus: true, returnStdout: true, script: 'c:\\temp\\test.btm')
+            echo 'That\'s It! You\'re grounded!'
           }
         }
       }
