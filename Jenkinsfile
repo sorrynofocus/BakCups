@@ -13,6 +13,11 @@ pipeline {
             echo 'I\'m doing something....'
           }
         }
+        stage('') {
+          steps {
+            bat(returnStatus: true, returnStdout: true, script: 'c:\\temp\\test.btm')
+          }
+        }
       }
     }
   }
